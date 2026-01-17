@@ -114,7 +114,7 @@ for i in range(len(df_reg)):
     )
 
 #Imprimir el grafico.
-"""plt.show()"""
+plt.show()
 
 #----------------------------------------------------------------------------------------------------
 
@@ -126,16 +126,6 @@ artículo de Obstfeld, Shambaugh y Taylor.
 """
 
 # --- IMPORTACION DEL DATAFRAME ---
-
-"""Notas: 
-df_TCN cuenta on fechas desde 2020 hasta 2026, se deben quitar las
-de 2026...
-
-
-
-"""
-
-
 
 
 #Tipo de Cambio Nominal 2020-2025 (TCN).
@@ -154,4 +144,4 @@ df_TCN.dropna(subset=['TCN'], inplace=True)
 stdev_TCN = statistics.stdev(df_TCN['TCN'])
 
 print(stdev_TCN)
-#82.77294435648197
+#82.77294435648197 CLP
